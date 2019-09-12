@@ -34,6 +34,87 @@ html, body {
     flex-flow: column nowrap;
 }
 
+/* API Modal */
+.modalBack {
+    background: #00000080;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 40%;
+    height: auto;
+    background: #fefefe;
+    box-sizing: border-box;
+    padding: 1.5rem;
+}
+
+.modal > input {
+    background: #fcfcfc;
+    border: none;
+    border-bottom: 1px solid #1b1b1b;
+    font-family: "Quicksand", sans-serif;
+}
+
+.button {
+    background-color: #228ef3;
+    color: #fefefe;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #57a8f3;
+}
+
+/* Top bar */
+.topBar {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    padding: 0 1rem;
+
+    color: #fefefe;
+}
+
+.topBar > * {
+    margin: 0 0.5rem;
+}
+
+.weather {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather > img {
+    height: 80%;
+}
+
+.lightIcon {
+    color: #fefefe30;
+    transition: all 100ms ease-in-out;
+    cursor: pointer;
+}
+
+.lightIcon:hover {
+    color: inherit;
+    transition: all 100ms ease-in-out;
+}
+
 /* Footer */
 .footer {
     position: absolute;
@@ -188,4 +269,8 @@ background: -webkit-linear-gradient(hsl(25, 83%,47%), hsl(0, 83%, 47%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent   
 
+}
+
+.--hidden {
+    display: none;
 }

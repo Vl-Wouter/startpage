@@ -10,6 +10,20 @@
     <script src="https://kit.fontawesome.com/bd8617b409.js"></script>
 </head>
 <body class="fill flex flex-center flex-column" id="startPage">
+    <div class="modalBack --hidden" id="settingModal">
+        <div class="modal">
+            <h2>Add API Key</h2>
+            <input type="text" name="api" id="apiKey" placeholder="api key">
+            <button class="button" id="addApiKeyBtn">Add Key</button>
+        </div>
+    </div>
+    <div class="topBar">
+        <span class="weather"></span>
+        <span class="temp"></span>
+        <span class="location"></span>
+        <span class="clock"></span>
+        <span class="lightIcon" id='settingsIcon'><i class="fas fa-cog"></i></span>
+    </div>
     <div class="searchContainer --closed" id="searchContainer">
         <div class="searchLogo" id="searchLogo">
             <img src="images/g-logo.png" alt="Google Logo">
